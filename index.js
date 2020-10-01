@@ -3,7 +3,7 @@ const github = require("@actions/github");
 const liquibase = require("liquibase");
 const path = require('path')
 
-const changelogFile = core.getInput("changelog-file");
+const changeLogFile = core.getInput("changelog-file");
 const url = core.getInput("db-url");
 const username = core.getInput("username");
 const password = core.getInput("password");
@@ -11,7 +11,7 @@ const action = core.getInput("action");
 
 const config = {
   liquibase: path.join(__dirname, 'liquibase', 'liquibase'),
-  changelogFile,
+  changeLogFile,
   url,
   username,
   password,
