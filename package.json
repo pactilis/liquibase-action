@@ -10,8 +10,8 @@
     "@actions/github": "^4.0.0"
   },
   "scripts": {
-    "clean": "rimraf dist",
-    "build": "yarn clean && ncc build index.js --license licenses.txt && cp -r liquibase dist"
+    "clean": "rimraf ./dist/",
+    "build": "ncc build index.js --license licenses.txt && cp -r liquibase dist && cp -r drivers dist"
   },
   "devDependencies": {
     "@vercel/ncc": "vercel/ncc",
