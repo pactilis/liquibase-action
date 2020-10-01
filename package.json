@@ -1,0 +1,13 @@
+{
+  "name": "liquibase-action",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/pactilis/liquibase-action.git",
+  "author": "Jonatan Sombié <jonatan.sombie@pactilis.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0",
+    "liquibase": "^1.0.1"
+  }
+}

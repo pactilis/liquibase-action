@@ -1,0 +1,22 @@
+name: "Liquibase command"
+description: "Run liquibase action"
+inputs:
+  changelog-file: # id of input
+    description: "Liquibase changelog file"
+    required: true
+  db-url: # id of input
+    description: "Database url (jdbc)"
+    required: true
+  username: # id of input
+    description: "Database username"
+    required: true
+  password: # id of input
+    description: "Database password"
+    required: true
+  action: # id of input
+    description: "Liquibase action"
+    required: true
+    default: "update"
+runs:
+  using: "node12"
+  main: "dist/index.js"
