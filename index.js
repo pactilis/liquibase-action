@@ -12,9 +12,9 @@ const action = core.getInput("action");
 const config = {
   liquibase: path.join(__dirname, 'liquibase', 'liquibase'),
   changeLogFile,
-  url,
-  username,
-  password,
+  url: `"${url}"`,
+  username: `"${username}"`,
+  password: `"${password}"`,
 };
 
 liquibase(config)
