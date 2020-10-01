@@ -21,7 +21,7 @@ function run(action, url, changeLogFile) {
         __dirname,
         "drivers",
         "mssql-jdbc-7.4.1.jre8.jar"
-      )}" --changeLogFile="${changeLogFile}" --url="${url}" --logLevel=info ${action}`,
+      )}" --changeLogFile="${changeLogFile}" --url=${url} --logLevel=info ${action}`,
       (error, stdout, stderr) => {
         if (error) {
           reject(error);
