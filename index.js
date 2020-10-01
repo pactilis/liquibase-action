@@ -20,7 +20,7 @@ function run(action, url, changeLogFile) {
       )} --classpath="${path.join(
         __dirname,
         "drivers",
-        "mssql-jdbc-jre14.jar"
+        "mssql-jdbc-7.4.1.jre8.jar"
       )}" --changeLogFile="${changeLogFile}" --url="${url}" --logLevel=info ${action}`,
       (error, stdout, stderr) => {
         if (error) {
