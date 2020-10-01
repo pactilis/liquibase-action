@@ -1,6 +1,8 @@
 const liquibase = require("liquibase");
+const path = require("path");
 
 const config = {
+  liquibase: path.join(__dirname, "liquibase", "liquibase"),
   changeLogFile: "demo/changelog.xml",
   url: '"jdbc:sqlserver://localhost;database=mydb;"',
   username: "sa",
